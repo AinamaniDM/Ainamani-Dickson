@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ainamani Dickson</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e5ff8bc16b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href ="#header">Home</a></li>
+                    <li><a href ="about.html">About</a></li>
+                    <li><a href ="services.html">Services</a></li>
+                    <li><a href ="portfolio.html">Portfolio</a></li>
+                    <li><a href ="contact.html">Contact</a></li>
+                    <i class ="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class ="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hello, you're welcome here! I'm <span>Ainamani Dickson</span><br>a Ugandan software engineer</h1>
+        </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+
+
+</body>
+</html>
